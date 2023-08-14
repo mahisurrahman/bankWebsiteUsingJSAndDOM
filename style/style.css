@@ -1,0 +1,13 @@
+* {
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+body {
+    background-color: black;
+}
+
+.login-inputs::placeholder{
+    font-size: 15px;
+    font-weight: 400;
+    color: black;
+}
