@@ -8,8 +8,8 @@ document.getElementById('btn-submit').addEventListener('click',function(){
     const password = passwordField.value;
 
     if(email === 'zordanblog009@gmail.com' && password === 'Mahis@Itb281'){
-        console.log('valid User');
+        window.location.href = 'bank.html';
     }else{
-        console.log('invalid User');
+        alert ('Invalid Credentials !! Try AGAIN');
     }
 })
