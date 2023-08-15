@@ -13,25 +13,39 @@
         href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap"
         rel="stylesheet">
 </head>
-<body>
+<body class="border-2 border-white my-5 mx-10 pb-7 rounded-xl">
     <header>
-        <h1 class="text-5xl font-bold text-red-500 text-center mt-20 underline">Welcome to the Inside of<span class="text-blue-500">
+        <h1 class="text-5xl font-bold text-red-500 text-center mt-10 underline">Welcome to the Inside of<span class="text-blue-500">
                 The Bank</span></h1>
     </header>
     <main>
-        <section class="px-20">
-            <div class="grid grid-cols-3 gap-10 mt-10 mx-auto text-gray-800">
-                <div class="bg-yellow-200 rounded-xl px-10 py-10">
+        <section class="px-20 mt-10">
+            <div class="grid grid-cols-3 gap-10 mx-auto text-gray-800">
+                <div class="bg-yellow-200 rounded-xl px-10 py-5">
                 <h4 class="text-3xl font-bold">Diposit...</h4>
-                    <h2 class="text-5xl font-medium mt-5">$00</h2>
+                    <h2 class="text-5xl font-medium mt-5">$<span id="diposit-total">00</span></h2>
                 </div>
-                <div class="bg-green-300 rounded-xl px-10 py-10">
+                <div class="bg-green-300 rounded-xl px-10 py-5">
                     <h4 class="text-3xl font-bold">Withdraw...</h4>
-                    <h2 class="text-5xl font-medium mt-5">$00</h2>
+                    <h2 class="text-5xl font-medium mt-5">$ <span id="withdraw-total">00</span></h2>
                 </div>
-                <div class="bg-red-200 rounded-xl px-10 py-10">
+                <div class="bg-red-200 rounded-xl px-10 py-5">
                     <h4 class="text-3xl font-bold">Total Balance...</h4>
-                    <h2 class="text-5xl font-medium mt-5">$00</h2>
+                    <h2 class="text-5xl font-medium mt-5">$<span id="balance-total">1240</span></h2>
+                </div>
+            </div>
+        </section>
+        <section class="mt-10 px-20">
+            <div class="grid grid-cols-2 gap-10 mx-auto text-gray-800">
+                <div class="bg-slate-400 rounded px-10 py-10 border-l-8 border-yellow-400">
+                <h4 class="text-3xl font-bold">Please Diposit...</h4>
+                    <input class=" mt-2 w-full px-4 py-1 rounded" type="number" name="" id="diposit-field" placeholder="Enter the Diposit Amount">
+                    <button id="btn-deposit" class="hover:bg-yellow-400 hover: text-black px-4 font-bold py-1 rounded-xl bg-green-400 border-2 border-green-900 mt-4">Diposit</button>
+                </div>
+                <div class="bg-orange-400 rounded px-10 py-10 border-l-8 border-yellow-400">
+                    <h4 class="text-3xl font-bold">Please Withdraw...</h4>
+                    <input class=" mt-2 w-full px-4 py-1 rounded" type="number" name="" id="withdraw-field" placeholder="Enter the Withdraw Amount">
+                    <button id="withdraw-btn" class="hover:bg-red-400 hover: text-black px-4 py-1 font-bold rounded-xl bg-green-400 border-2 border-green-900 mt-4">Withdraw</button>
                 </div>
             </div>
         </section>
@@ -39,6 +53,7 @@
     <footer>
 
     </footer>
-    <script src="./javascript/login.js"></script>
+    <script src="./javascript/deposit.js"></script>
+    <script src="./javascript/withdraw.js"></script>
 </body>
 </html>
